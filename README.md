@@ -13,7 +13,7 @@
   
 #  Signor.io
 
-A digital signature platform built with React.
+- To be added
 
 ##  Installation
 
