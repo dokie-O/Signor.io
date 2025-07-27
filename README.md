@@ -1,5 +1,5 @@
 # NOTE from front-end dev 
-- I'm not 100% sure of my code quality if they are back-end ready.
+- I'm not sure of my code quality if they are back-end ready.
 - Back-end code have an error that I can't fix as it's from a different dev/person.
 - Right now to be able to start it you can delete the following files: 'go', 'login', 'register'. You have to delete these files because they contains back-end code.
 
