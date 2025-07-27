@@ -2,7 +2,7 @@
 - I'm not sure if my code quality is fully back-end ready.
 - The back-end code contains errors that I can't fix since it's written by a different developer.
 - To run the project **without errors**, please delete the following files:
-  - `go`
+  - `./go`
   - `src/pages/login`
   - `src/pages/register`
   
