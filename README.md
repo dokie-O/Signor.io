@@ -1,29 +1,27 @@
-# 📄 Signor.io
+#  Signor.io
 
 A digital signature platform built with React.
 
----
+##  Installation
 
-## Core Dependencies
-
-### Font Awesome Icons  
+1. Install all dependencies:
 ```bash
-npm install --save @fortawesome/fontawesome-svg-core
-npm install --save @fortawesome/free-solid-svg-icons
-npm install --save @fortawesome/react-fontawesome
+npm install
 ```
 
-### React Router  
+2. Start the development server:
 ```bash
-npm install react-router-dom
+npm start
 ```
 
-### Google Maps Integration  
-```bash
-npm install @vis.gl/react-google-maps
-```
+##  Core Technologies / Dependencies
 
-### Calendar  
-```bash
-npm install react-calendar
-```
+- **React Router** – For client-side routing
+- **Font Awesome** – Icon library for UI elements
+- **Google Maps (`@vis.gl/react-google-maps`)** – Map integrations
+- **React Calendar** – Date selection component
+
+>  All required packages are listed in `package.json` and will be installed automatically with `npm install`.
+
+##  Contact
+For questions, feel free to reach out or open an issue.
