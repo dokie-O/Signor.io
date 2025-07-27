@@ -1,3 +1,8 @@
+# NOTE from front-end dev 
+- I'm not 100% sure of my code quality if they are back-end ready.
+- Back-end code have an error that I can't fix as it's from a different dev/person.
+- Right now to be able to start it you can delete the following files: 'go', 'login', 'register'. You have to delete these files because they contains back-end code.
+
 #  Signor.io
 
 A digital signature platform built with React.
@@ -19,9 +24,11 @@ npm start
 - **React Router** – For client-side routing
 - **Font Awesome** – Icon library for UI elements
 - **Google Maps (`@vis.gl/react-google-maps`)** – Map integrations
-- **React Calendar** – Date selection component
+- **React Calendar**
 
 >  All required packages are listed in `package.json` and will be installed automatically with `npm install`.
 
 ##  Contact
 For questions, feel free to reach out or open an issue.
+
+
