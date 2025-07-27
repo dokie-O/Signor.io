@@ -31,7 +31,7 @@ npm start
 
 - **React Router** – For client-side routing
 - **Font Awesome** – Icon library for UI elements
-- **Google Maps (`@vis.gl/react-google-maps`)** – Map integrations
+- **Google Maps (`@vis.gl/react-google-maps`)**
 - **React Calendar**
 
 
