@@ -3,8 +3,8 @@
 - The back-end code contains errors that I can't fix since it's written by a different developer.
 - To run the project **without errors**, please delete the following files:
   - `go`
-  - `login`
-  - `register`
+  - `src/pages/login`
+  - `src/pages/register`
   
   These files include back-end logic that currently causes issues.
 
