@@ -161,6 +161,71 @@
     opacity: 0.5;
 }
 
+.info-cards-wrapper {
+    padding: 0 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-signer-card {
+    height: 100%;
+    background-image: url('../../assets/images/contact_us/signer_bg_image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pl-dl-card-title {
+    color: #FFFFFF;
+}
+
+.contact-card-info {
+    max-width: 300px;
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #DDDDDD;
+}
+
+.signer-card-info {
+    color: #000000;
+}
+
+.contact-pl-dl-card {
+    height: 100%;
+    background-image: url('../../assets/images/contact_us/pldl_bg_image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: left;
+    background-position: 10%;
+    background-size: cover;
+}
+
+.contact-card {
+    padding: 50px;
+    border-radius: 12px;
+    height: 310px;
+    width: 650px;
+}
+
+.contact-card-btn {
+    border: none;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    width: 175px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #0A65CC;
+}
+
+.contact-arrow {
+    margin-left: 10px;
+}
 @media only screen and (max-width: 768px) {
     .register-left-side,
     .register-right-side {
@@ -180,5 +245,9 @@
 
     .register-right-side-form {
         width: 100%;
+    }
+
+    .info-cards-wrapper {
+        flex-wrap: wrap;
     }
 }
