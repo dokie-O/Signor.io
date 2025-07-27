@@ -1,8 +1,16 @@
 # NOTE from front-end dev 
-- I'm not sure of my code quality if they are back-end ready.
-- Back-end code have an error that I can't fix as it's from a different dev/person.
-- Right now to be able to start it you can delete the following files: 'go', 'login', 'register'. You have to delete these files because they contains back-end code.
+- I'm not sure if my code quality is fully back-end ready.
+- The back-end code contains errors that I can't fix since it's written by a different developer.
+- To run the project **without errors**, please delete the following files:
+  - `go`
+  - `login`
+  - `register`
+  
+  These files include back-end logic that currently causes issues.
 
+- To access the **Student Dashboard**, go to:  
+   `http://localhost:3000/studentDashboard`
+  
 #  Signor.io
 
 A digital signature platform built with React.
