@@ -1,0 +1,12 @@
+/* Cookie */
+.cookies {
+    position: fixed;
+    top: 60%;
+    left: 3%;
+    width: 60px;
+    height: 60px;
+    background-image: url('../../assets/images/cookies_image.png');
+    background-size: cover;
+    cursor: pointer;
+    z-index: 99;
+}

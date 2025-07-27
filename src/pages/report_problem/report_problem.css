@@ -1,0 +1,151 @@
+.form-wrapper {
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.helpcenter-body {
+    padding: 3vh 25vw 3vh 25vw;
+    background-color: #F1F2F4;
+}
+
+.input-field {
+    margin-bottom: 1rem;
+}
+
+.input-field input {
+    border: 1px solid #7D7D7D;
+    background: #F7F7F7;
+}
+
+.input-field input:focus,
+.desc-field textarea:focus {
+    border: 1px solid #000;
+    outline: none;
+}
+
+.attachment-field button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #3344EE;
+    color: #FFFFFF;
+}
+
+.input-field label {
+    color: #7D7D7D;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.asterisk {
+    color: #FF0000;
+}
+
+.input-field input {
+    height: 50px;
+    font-size: 18px;
+    padding: 12px 14px;
+}
+
+.input-field textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 1px solid #7D7D7D;
+    font-size: 1rem;
+    background: #F7F7F7;
+    color: #222;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.attachment-field {
+    height: auto;
+}
+
+.attachment-field h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.attachment-field-box {
+    min-height: 250px;
+    border: 2px dashed #7D7D7D;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1.15rem 1rem 0 1rem;
+}
+
+.btn-send {
+    width: 111px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #3344EE;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .helpcenter-body {
+        padding: 3vh 15vw 3vh 15vw;
+    }
+
+    .helpcenter-h h3 {
+        line-height: 1.3;
+        text-wrap: pretty;
+    }
+
+    .attachment-field h1 {
+        font-size: 1.15rem;
+    }
+
+    .attachment-field-box button {
+        height: 40px;
+        width: 100px;
+    }
+
+    .btn-send,
+    .btn-cancel {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+        .helpcenter-body {
+        padding: 3vh;
+    }
+}

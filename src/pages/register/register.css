@@ -1,0 +1,184 @@
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper span {
+    position: absolute;
+    top: 35%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #888;
+    font-size: 1rem;
+}
+
+.register-left-side,
+.register-right-side {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-left-side {
+    width: 40%;
+}
+
+.register-right-side {
+    width: 60%;
+}
+
+.register-left-side {
+    background-color: #180082;
+    opacity: 0.95;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.register-left-side-image {
+    background-image: url('../../assets/images/register_login/signor_fox.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+}
+
+
+.register-left-side-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.register-right-side {
+    background-color: #DCEEF4;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-right-side-form {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.register-right-side-logo {
+    height: 60px;
+    background: url('../../assets/images/fox_logo.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 1.5rem;
+}
+
+.register-right-side-choices {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.register-right-side-choices button {
+    padding: 0.75rem;
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    flex: 1;
+}
+
+.register-right-side-choices button.active {
+    background-color: #005fcc;
+    color: white;
+}
+
+.register-right-side-choices button:hover {
+    background-color: #005fcc;
+    color: white;
+}
+
+.register-right-side-choices button:hover {
+    background-color: #005fcc;
+    color: white;
+}
+
+.create-acc-btn {
+    background-color: #005fcc;
+}
+
+.checkbox-text {
+    font-size: 12px;
+}
+
+.register-right-side-form input[type='text'],
+.register-right-side-form input[type='email'],
+.register-right-side-form input[type='password'] {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.register-right-side-form input[type='checkbox'] {
+    margin-right: 0.5rem;
+}
+
+.create-acc-btn {
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.create-acc-btn:hover {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .register-left-side,
+    .register-right-side {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .register-left-side {
+        display: none;
+    }
+
+    .register-right-side {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .register-right-side-form {
+        width: 100%;
+    }
+}

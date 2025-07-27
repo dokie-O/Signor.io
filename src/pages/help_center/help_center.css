@@ -1,0 +1,123 @@
+.helpcenter-h {
+    background-image: url('../../assets/images/contact_us/contact_header_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    color: #FFFFFF;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.helpcenter-h h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.helpcenter-h h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 70px;
+}
+
+.helpcenter-searchbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 10vw;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    gap: 0;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.search-icon {
+    color: #6b7280;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.helpcenter-searchbar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 220px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #0047FF;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #0036cc;
+}
+
+
+.helpcenter-faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F2F4;
+}
+
+.helpcenter-articles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 2vw 10vw;
+}
+
+.helpcenter-articles {
+    flex: 0 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.articles-con {
+    background-color: #fff;
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    border: 0.5px solid #838383;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+
+.articles-con h1,
+.articles-con p {
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}

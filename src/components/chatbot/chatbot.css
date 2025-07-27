@@ -1,0 +1,12 @@
+/* Bot */
+.signor-bot {
+    position: fixed;
+    top: 60%;
+    right: 3%;
+    width: 60px;
+    height: 60px;
+    background-image: url('../../assets/images/signor_chatbot_image.png');
+    background-size: cover;
+    cursor: pointer;
+    z-index: 99;
+}

@@ -1,38 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --mainColor: #180082;
+  --secondaryColor: #3344EE;
+  --accentColor: #C89116;
+  --neutralColor: #D9D9D9;
+  --strokeColor: #D4BFBF;
+  --footerFontColor: #F5F5F5;
+  --fontColorDark: #000000;
+  --fontColorSubDark: #aaaaaa;
+  --fontColorLight: #FFFFFF;
+  
+  /* Added Colors v0.2.1 
+    / Dinaclare ko parin yung ibang dups 
+    na satingin ko magkaka problema sa dark 
+    mode if same ginamit ko kahit dupes 
+  */
+
+  --gradientLineColorLeft: #81CEFC;
+  --gradientLineColorRight: #1C009A;
+
+  /* Hero */
+  --hero1stSectionTitleFontColor: #FFFFFF;
+  --hero1stSectionBgColor: #021667;
+  --guideSectionFontColor: #000000;
+  --guideSectionBgColor: #F1F2F4;
+  --heroTitlesFontColor: #021252;
+  --programsContainerBgColor: #FFFFFF;
+  --faqBtnFontColor: #180082;
+  --faqBtnBgColor: #FFFFFF;
+  --faqBtnActiveBgColor: #CCCCCC;
+  --faqPanelBgColor: #180082;
+  --faqPanelFontColor: #FFFFFF;
+
+  /* Header */
+  --registerBtnColor: #00C7BE;
+  --sideBarBgColor: #14143f;
+  --headerHoverStroke: #FFFFFF;
+  --headerButtonShadow: #000000;
+
+  /* ContactUs */
+  --sendMessageBtn: #007AFF;
+  --sendMessageBtnFontColor: #FFFFFF;
+  
+  /* Features */
+  --featuresBodyColor: #F1F2F4;
+  --featuresBoxColor: #FFFFFF;
+
+  /* Student Dashboard */
+  --mainContentBgColor: #F9F9F9;
+}
+
 .App {
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 701px) {
+  .App {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .App {
+    font-size: 1vw;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: var(--mainColor);
+  max-height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: auto;
+
+  text-align: center;
+  font-size: 12px;
+  color: var(--footerFontColor);
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: row;
+  width: 98vw;
+  overflow: hidden;
+}
+
+.row1 {
+  justify-content: space-between;
+  width: 85vw;
+  padding: 1%;
+}
+
+.row2 {
+  justify-content: space-between;
+  height: 5vh;
+  align-items: center;
+  border-top: 1px solid var(--strokeColor);
+  padding: 0.5%;
+}
+
+.col1, .col2, .col3, .col4 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.col2, .col3, .col4 {
+  text-align: left;
+}
+
+.col2 {
+  width: 120px;
+}
+
+.col3 {
+  width: 90px;
+}
+
+.col4 {
+  width: 160px;
+}
+
+.signor-logo {
+  display: flex;
+  height: 72px;
+  max-width: fit-content;
+  margin-bottom: -5px;
+}
+
+.footer-details {
+  text-align: left;
+  align-self: self-start;
+}
+
+.contact-num {
+  font-size: 1.24em;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.44em;
+  font-weight: bold;
+  text-wrap: nowrap;
+  height: 48px;
+}
+
+.footer-link {
+  transition: 0.2s ease-in-out;
+  width: fit-content;
+  margin: 2.4vw 0px;
+  font-size: 1.20em;
+  cursor: pointer;
+  user-select: none;
+  color: var(--fontColorLight);
+}
+
+.footer-link:hover, .link-container:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  font-weight: bold;
+}
+
+.social-media-buttons {
+  display: flex;
+  position: relative;
+  right: 7vw;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.social_media_logo {
+  height: 24px;
+  max-width: fit-content;
+  margin: 0px 1vw;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.social_media_logo:hover {
+  transform: scale(1.6);
+}
+
+.rights-text {
+  position: relative;
+  left: 14vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    font-size: 3.2vw;
+  }
+
+  .row1 {
+    flex-wrap: wrap;
+  }
+
+  .row2 {
+    flex-direction: column;
+    height: 20vw;
+    justify-content: space-evenly;
+  }
+
+  .col1, .col2, .col3, .col4 {
+    display: flex;
+    flex-direction: column;
+    margin: 4vw 4vw;
+    width: 100%;
+  }
+
+  .signor-logo {
+    height: 24vw;
+    margin-bottom: -2.4vw;
+  }
+
+  .contact-num {
+    margin-bottom: -2.4vw;
+  }
+
+  .footer-header {
+    height: 12vw;
+  }
+
+  .footer-link {
+    margin: 2.4vw 0px;
+  }
+
+  .rights-text {
+    order: 2;
+    left: 0vh;
+  }
+
+  .social-media-buttons {
+    right: 0vh;
+  }
+
+  .social_media_logo {
+    height: 6.4vw;
+  }
+}
+/* Footer End */
+
+/* About Us */
+.cover {
+  height: 640px;
+  width: 100%;
+  background-image: url('./assets/images/about_us/ccs_cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;  
+  display: flex;
+  flex-direction: column;
+}
+
+.cover_title {
+  color: var(--fontColorLight);
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px #00000040;
+  margin-bottom: 2.4vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cover_details {
+  width: 60vw;
+
+  color: var(--fontColorLight);
+  font-size: 1.2em;
+  font-weight: 100px;
+  text-shadow: 0px 2px 2px #00000040;
+  text-wrap: wrap;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Carousel */
+.carousel-title {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--fontColorDark);
 }
+
+.c-main-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 4vw;
+}
+
+.c-subtitle {
+  font-size: 1em;
+  color: var(--fontColorSubDark);
+  margin-top: 1.6vw;
+  margin-bottom: 2vw;
+}
+
+.about-us-carousel {
+  width: 100%;
+  overflow-x: clip;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 28vw;
+  width: 100%;
+  overflow-x: clip;
+}
+
+.group-member-image {
+  position: absolute;
+  height: 20.943vw;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.img1 {
+  z-index: 1;
+  transform: translate(-38.8vw) scale(0.50) ;
+}
+
+.img2 {
+  z-index: 2;
+  transform: translate(-28.7vw) scale(0.65);
+}
+
+.img3 {
+  z-index: 3;
+  transform: translate(-16vw) scale(0.8);
+}
+
+.img4 {
+  z-index: 4;
+  transform: translate(0px);
+  cursor: default;
+}
+
+.img5 {
+  z-index: 3;
+  transform: translate(16vw) scale(0.8);
+}
+
+.img6 {
+  z-index: 2;
+  transform: translate(28.7vw) scale(0.65);
+}
+
+.img7 {
+  z-index: 1;
+  transform: translate(38.8vw) scale(0.5);
+}
+
+@media only screen and (max-width: 700px) {
+  .about-us {
+    font-size: 2.2vw;
+  }
+
+  .side-bar li {
+    font-size: 18px;
+  }
+
+  .cover {
+    height: 124vw;
+  }
+  
+  .carousel-container {
+    max-width: 100vw;
+    height: 50vw;
+  }
+
+  .group-member-image {
+    scale: 2;
+  }
+
+  .img1 {
+    transform: translate(-20vw) scale(0.50) ;
+  }
+  
+  .img2 {
+    transform: translate(-14vw) scale(0.65);
+  }
+  
+  .img3 {
+    transform: translate(-8vw) scale(0.8);
+  }
+  
+  .img4 {
+    transform: translate(0px)
+  }
+  
+  .img5 {
+    transform: translate(8vw) scale(0.8);
+  }
+  
+  .img6 {
+    transform: translate(14vw) scale(0.65);
+  }
+  
+  .img7 {
+    transform: translate(20vw) scale(0.5);
+  }
+}
+/* Carousel End */
+/* About Us End */
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

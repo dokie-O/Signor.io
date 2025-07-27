@@ -1,0 +1,227 @@
+@import '../../App.css';
+
+:root {
+    --accent-background-img: url('../../assets/images/features/accent_bg.jpg');
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    min-height: 640px;
+    background-color: var(--hero1stSectionBgColor);
+    color: var(--hero1stSectionTitleFontColor);
+    
+    background-image: linear-gradient(
+        rgba(2, 22, 103, 0.7)
+    ),
+     url('../../assets/images/features/features_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features-title {
+    max-width: 1000px;
+    text-wrap: balance;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+
+}
+
+.features-row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5% 10% 5%;
+}
+
+.features-slogan {
+    padding-top: 3rem;
+    max-width: 650px;
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(242, 235, 235, 1);
+}
+
+.accent {
+    background: var(--accent-background-img) no-repeat center center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bolder;
+}
+
+.features-body {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--featuresBodyColor);
+}
+
+.features-row2 {
+    padding: 3vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.features-box {
+    margin: 3vw;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: var(--featuresBoxColor);
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.features-line {
+    height: 5px;
+    width: 50%;
+    background: linear-gradient(to right, var(--gradientLineColorLeft), var(--gradientLineColorRight));
+    filter: blur(0.5px);
+    margin: 1rem 0;
+}
+
+.l-2 {
+    margin-left: auto;
+}
+
+.t-2 {
+    text-align: right;
+}
+
+.features-info {
+    max-width: 1000px;
+    padding: 0 5% 0 5%;
+}
+
+.features-info-title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 64px;
+}
+
+.features-info-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+
+.f-image-1 {
+    background-image: url('../../assets/images/features/features_image1.png');
+}
+
+.f-image-2 {
+    background-image: url('../../assets/images/features/features_image2.png');
+}
+
+.f-image-3 {
+    background-image: url('../../assets/images/features/features_image3.png');
+}
+
+.features-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 550px;
+    min-height: 550px;
+}
+
+.features-box.reverse {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1440px) {
+    .features-box {
+        align-items: center;
+    }
+
+    .f-image-1, 
+    .f-image-2, 
+    .f-image-3 {
+        min-width: 416px;
+        min-height: 416px;
+    }
+
+    .features-info-description {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .features-info-title {
+        font-size: 35px;
+        line-height: 1.3;
+    }
+}   
+
+@media only screen and (max-width: 1024px) {
+    .f-image-1, 
+    .f-image-2, 
+    .f-image-3 {
+        min-width: 260px;
+        min-height: 260px;
+    }
+
+
+    .features-info-title {
+        font-size: 25px;
+    }
+
+    .features-info-description {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .features-title {
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .features-slogan {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .features-box {
+        flex-wrap: wrap;
+        padding: 5vw 3vw 5vw 3vw;
+    }
+
+    .features-info-title {
+        padding-top: 3%;
+    }
+
+    .features-info-description {
+        line-height: 1.45;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .features-title {
+        font-size: 45px;
+    }
+
+    .features-info-title {
+        font-size: 20px;
+    }
+}

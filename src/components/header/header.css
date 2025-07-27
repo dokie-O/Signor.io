@@ -1,0 +1,186 @@
+@import '../../App.css';
+
+.hero-header {
+    background-color: var(--mainColor);
+    padding: 10px 250px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+.nav-links li, 
+.side-bar li {
+  list-style: none;
+}
+
+.nav a, 
+.nav button {
+  color: var(--fontColorLight);
+}
+
+.logo {
+  width: 120px;
+  height: 60px; 
+  background-image: url('../../assets/images/header/Signor_Logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 86px;
+}
+
+/* Buttons */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.buttons {
+  width: 87.5px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: var(--secondaryColor);
+}
+
+.register-btn {
+  background-color: transparent;
+  border: 3px solid var(--registerBtnColor);
+}
+
+/* Side Bar */
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  padding-top: 3rem;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  background-color: var(--sideBarBgColor);
+  text-align: center;
+}
+
+.side-bar.show {
+  display: flex;
+}
+
+.side-bar li {
+  width: 100%;
+  padding: 5% 3%;
+}
+
+.sidebar-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Menu Bar */
+.menu-bar {
+  display: none;
+  font-size: 20px;
+  padding-right: 20px;
+  color: var(--fontColorLight);
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+  -webkit-text-stroke: 0.5px var(--headerHoverStroke);
+}
+
+.buttons-container button:hover {
+  box-shadow: 0 4px 4px var(--headerButtonShadow);
+}
+
+@media only screen and (max-width: 1500px) {
+    .hero-header {
+      padding: 0 130px;
+    }
+
+    .nav-links {
+      gap: 53.75px;
+    }
+  }
+  
+  @media only screen and (max-width: 1150px) {
+    .hero-header {
+      padding: 0 100px;
+    }
+
+    .nav-links {
+      font-size: 15px;
+    }
+
+    .buttons {
+      width: calc(87.5px/1.3);
+      height: calc(40px);
+    }
+  } 
+
+  @media only screen and (max-width: 992px) {
+    .hero-header {
+      padding: 0 70px;
+    }
+
+    .nav-links {
+      gap: 33.59px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .hero-header {
+      padding: 0 24px;
+    }
+
+    .nav-links {
+      gap: 21px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .menu-bar {
+      display: block;
+      cursor: pointer;
+    }
+
+    .logo {
+      height: 50px;
+      width: 70px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .hero-header {
+      padding: 0 16px;
+    }
+
+    .nav-links {
+      gap: 13.125;
+    }
+}

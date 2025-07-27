@@ -1,0 +1,238 @@
+.student-dashboard-header {
+    width: 100%;
+    padding-left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-dashboard-header-profile-image {
+    background-image: url('../../assets//images/student_dashboard/dashboard_profile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 45px;
+    height: 45px;
+}
+
+.student-dashboard-header-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-dashboard-header-profile {
+    display: flex;
+    padding: 1rem 3rem 1rem 1rem;
+}
+
+.student-dashboard-header-user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.student-dashboard-header-user-role {
+    color: #898989;
+}
+
+.student-dashboard-header-notif-menu {
+    position: absolute;
+    top: 69px;
+    right: 17px;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    min-width: 340px;
+    z-index: 200;
+    border: 1px solid #eee;
+    padding: 0 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.student-dashboard-header-notif-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.student-dashboard-header-help {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    color: #444;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.student-dashboard-header-notif, 
+.student-dashboard-header-help{
+    color: #898989;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.student-dashboard-header-notif {
+    margin-right: 15px;
+}
+
+/* Dropdown container */
+.student-dashboard-header-help-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown menu */
+.student-dashboard-header-help-menu {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    min-width: 220px;
+    z-index: 100;
+    border: 1px solid #eee;
+}
+
+/* Arrow pointer */
+.student-dashboard-header-help-menu::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 0;
+    border-width: 0 12px 12px 12px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+/* Menu items */
+.student-dashboard-header-help-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.student-dashboard-header-help-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.student-dashboard-header-help-menu li:hover {
+    background: #f5f5f5;
+}
+
+.stud-menu-bar {
+    display: none;
+    font-size: 20px;
+}
+
+.notif-menu-arrow {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid #2156f7;
+}
+
+.notif-menu-header {
+    background: #2156f7;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+    padding: 16px 24px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.notif-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.notif-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    margin-right: 14px;
+}
+
+.notif-info {
+    flex: 1;
+    font-size: 15px;
+    color: #222;
+    padding-right: 24px;
+}
+
+.notif-user,
+.notif-info b {
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.notif-time {
+    font-size: 12px;
+    color: #888;
+}
+
+.notif-dot {
+    width: 10px;
+    height: 10px;
+    background: #2156f7;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #2156f755;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: box-shadow 0.2s;
+}
+
+.notif-menu-footer {
+    text-align: center;
+    padding: 8px 0 0 0;
+}
+
+.notif-view-all {
+    color: #2156f7;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-drop-down {
+    align-self: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .stud-menu-bar {
+        display: flex;
+    }
+}
