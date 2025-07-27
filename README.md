@@ -8,7 +8,7 @@
   
   These files include back-end logic that currently causes issues.
 
-- To access the **Student Dashboard**, go to:  
+- For now, In order to access the **Student Dashboard**, go to:  
    `http://localhost:3000/studentDashboard`
   
 #  Signor.io
