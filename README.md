@@ -26,9 +26,4 @@ npm start
 - **Google Maps (`@vis.gl/react-google-maps`)** – Map integrations
 - **React Calendar**
 
->  All required packages are listed in `package.json` and will be installed automatically with `npm install`.
-
-##  Contact
-For questions, feel free to reach out or open an issue.
-
 
