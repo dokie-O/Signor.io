@@ -10,6 +10,7 @@
 
 - For now, In order to access the **Student Dashboard**, go to:  
    `http://localhost:3000/studentDashboard`
+- Most of the pages that needed back-end code is currently working in progress.
   
 #  Signor.io
 
